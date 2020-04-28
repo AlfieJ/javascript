@@ -12,6 +12,14 @@ export class Length {
     constructor(private value: number, private length: ELengths) {
     }
 
+    public getValue(): number {
+        return this.value;
+    }
+
+    public getLength(): ELengths {
+        return this.length;
+    }
+
     public As(length: ELengths): Length {
         let v = this.value;
         switch (this.length) {
